@@ -87,46 +87,6 @@ VITE_API_URL="https://fakestoreapi.com"
 
 ---
 
-## 📁 Estrutura do Projeto
-
-dashboard-arte-arena/
-├── public/
-├── src/
-│ ├── test/ # Arquivos de teste
-│ ├── assets/ # Recursos estáticos
-│ ├── features/ # Módulos por funcionalidade (Home, auth, dashboard, products, users, orders)
-│ │ ├── Home/ # Contém a Landing Page
-│ │ │ ├── components/ # Componentes da Landing (LandHero, LandFeatures, etc.)
-│ │ │ └── pages/ # Página principal da Landing (LandingPage.vue)
-│ │ │ └── router/ # Roteamento da Home
-│ │ ├── auth/ # Funcionalidades de autenticação
-│ │ ├── dashboard/ # Funcionalidades do Dashboard
-│ │ ├── products/ # Funcionalidades de Produtos
-│ │ ├── users/ # Funcionalidades de Usuários
-│ │ └── orders/ # Funcionalidades de Pedidos
-│ ├── layouts/ # Componentes de layout (Sidebar, Topbar)
-│ ├── router/ # Roteamento principal
-│ ├── shared/ # Componentes, hooks, serviços e tipos compartilhados
-│ ├── utils/ # Funções utilitárias
-│ ├── App.vue
-│ └── main.ts
-├── .gitignore
-├── Dockerfile # Arquivo para construção da imagem Docker
-├── LISENCE.md
-├── README.md
-├── index.html
-├── nginx.conf # Configuração do Nginx para servir a aplicação
-├── package.json
-├── shims-vue.d.ts
-├── tsconfig.app.json
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.ts
-├── vitest.config.ts
-└── yarn.lock
-
----
-
 ### ▶️ Execução Local
 
 | Ambiente | Comando           | Acesso                |
