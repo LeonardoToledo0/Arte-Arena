@@ -1,0 +1,31 @@
+# Nome do workflow
+name: CI/CD Pipeline Sentinel 
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "yarn"
+
+      - name: Instalar dependências
+        run: yarn install --frozen-lockfile
+
+      - name: Executar testes
+        run: yarn vitest
+
+      - name: Build do projeto
+        run: yarn build
