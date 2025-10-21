@@ -106,6 +106,16 @@ VITE_API_URL="https://fakestoreapi.com"
 | Rodar container | `docker run -p 8080:80 --name arte-arena-container dashboard-arte-arena`  
 
 ---
+
+## 📖 Uso
+
+Para acessar o dashboard, é necessário fazer login. Durante o desenvolvimento e testes, você pode utilizar as seguintes credenciais de exemplo:
+
+- **Username:** `mor_2314`
+- **Password:** `83r5^_`
+
+---
+
 ### 🧰 Rodando Testes
 
 | Etapa                                        | Comando           |
